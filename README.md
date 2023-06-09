@@ -92,6 +92,9 @@ https://drive.google.com/drive/folders/1WSYknCyP11lraXsjaTRNCGYYS4ejhJXf
 ![Screenshot 2023-06-10 000424](https://github.com/Senthil-Riddhish/Ai-Artistss/assets/82893678/0efc3c16-dbe4-44b1-9682-2593a2bb00b3)
 ![Screenshot 2023-06-10 000437](https://github.com/Senthil-Riddhish/Ai-Artistss/assets/82893678/008a3ee6-a0aa-462e-b652-687ca17c4676)
 
+## Object Detection for Autonomus vehicles:
+![Screenshot 2023-06-10 001534](https://github.com/Senthil-Riddhish/Ai-Artistss/assets/82893678/99d5327a-2108-4cce-a685-ec1ee8c754f1)
+
 ## What I Learned:
 - Familiarity with YOLO Architecture: YOLO (You Only Look Once) is a popular and efficient object detection algorithm. Implementing YOLOv8 will make you familiar with its architecture, including the backbone network (e.g., Darknet), feature extraction layers, and detection layers.
 
