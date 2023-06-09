@@ -86,7 +86,20 @@ python train.py --data custom_dataset.yaml --epochs 300 --weights '' --cfg yolov
                                                                  yolov5x                    16
 ```
 ## Output Videos From Our Model
-Video 1:
-Video 2:
+https://drive.google.com/drive/folders/1WSYknCyP11lraXsjaTRNCGYYS4ejhJXf
+## Output Graph:
+![Screenshot 2023-06-10 000404](https://github.com/Senthil-Riddhish/Ai-Artistss/assets/82893678/ab9b5551-0320-4dcc-8a72-ae2f22b591c1)
+![Screenshot 2023-06-10 000424](https://github.com/Senthil-Riddhish/Ai-Artistss/assets/82893678/0efc3c16-dbe4-44b1-9682-2593a2bb00b3)
+![Screenshot 2023-06-10 000437](https://github.com/Senthil-Riddhish/Ai-Artistss/assets/82893678/008a3ee6-a0aa-462e-b652-687ca17c4676)
+
 ## What I Learned:
-   Write about the biggest learning you had while developing the prototype
+- Familiarity with YOLO Architecture: YOLO (You Only Look Once) is a popular and efficient object detection algorithm. Implementing YOLOv8 will make you familiar with its architecture, including the backbone network (e.g., Darknet), feature extraction layers, and detection layers.
+
+- Preprocessing and Augmentation Techniques: Object detection often requires preprocessing and data augmentation to improve model performance. While implementing YOLOv8, we have learnt about various techniques such as resizing, normalization, data augmentation (e.g., random cropping, flipping), and handling object annotations.
+Hyperparameter Tuning: YOLOv8 has several hyperparameters that affect the model's performance, such as learning rate, batch size, anchor sizes, and confidence thresholds. - - we have learnt and gained experience in tuning these hyperparameters to optimize the model's accuracy and efficiency.
+We explored a range of Intel's software development tools and libraries, including the AI analytics toolkit and its libraries.
+Using Intel® AI Analytics Toolkits we were able to enhance performance speed in training data.
+- Brainstormed with novel algorithms for different kinds of object detection specific to autonomous vehicles.Implemented Object detection alongwith distance mapping of nearby objects in order to prevent collisions. We've been able to custom label/annotate the objects in detection.
+- We explored a range of Intel's software development tools and libraries, including the AI analytics toolkit and its libraries.
+Using Intel® AI Analytics Toolkits we were able to enhance performance speed in training data. Brainstormed with novel algorithms for different kinds of object detection specific to autonomous vehicles. Implemented Object detection alongwith distance mapping of nearby objects in order to prevent collisions.
+We've been able to custom label/annotate the objects in detection.
