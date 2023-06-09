@@ -93,14 +93,14 @@ https://drive.google.com/drive/folders/1WSYknCyP11lraXsjaTRNCGYYS4ejhJXf
 ![Screenshot 2023-06-10 000437](https://github.com/Senthil-Riddhish/Ai-Artistss/assets/82893678/008a3ee6-a0aa-462e-b652-687ca17c4676)
 
 ## Object Detection for Autonomus vehicles:
-![Screenshot 2023-06-10 001534](https://github.com/Senthil-Riddhish/Ai-Artistss/assets/82893678/99d5327a-2108-4cce-a685-ec1ee8c754f1)
+![Screenshot 2023-06-10 002233](https://github.com/Senthil-Riddhish/Ai-Artistss/assets/82893678/338041a1-85f8-4d7f-8e1b-53502972de2d)
 
 ## What I Learned:
-- Familiarity with YOLO Architecture: YOLO (You Only Look Once) is a popular and efficient object detection algorithm. Implementing YOLOv8 will make you familiar with its architecture, including the backbone network (e.g., Darknet), feature extraction layers, and detection layers.
+- Familiarity with YOLO Architecture: YOLO (You Only Look Once) is a popular and efficient object detection algorithm. Implementing YOLOv8 helped us familiarise ourselves with its architecture, including the backbone network (e.g., Darknet), feature extraction layers, and detection layers.
 
-- Preprocessing and Augmentation Techniques: Object detection often requires preprocessing and data augmentation to improve model performance. While implementing YOLOv8, we have learnt about various techniques such as resizing, normalization, data augmentation (e.g., random cropping, flipping), and handling object annotations.
+- Preprocessing and Augmentation Techniques: Object detection often requires preprocessing and data augmentation to improve model performance. While implementing YOLOv8, We have learnt about various techniques such as resizing, normalization, data augmentation (e.g., random cropping, flipping), and handling object annotations.
 Hyperparameter Tuning: YOLOv8 has several hyperparameters that affect the model's performance, such as learning rate, batch size, anchor sizes, and confidence thresholds.
-- we have learnt and gained experience in tuning these hyperparameters to optimize the model's accuracy and efficiency.
+- We have learnt and gained experience in tuning these hyperparameters to optimize the model's accuracy and efficiency.
 We explored a range of Intel's software development tools and libraries, including the AI analytics toolkit and its libraries.
 Using Intel® AI Analytics Toolkits we were able to enhance performance speed in training data.
 - Brainstormed with novel algorithms for different kinds of object detection specific to autonomous vehicles.Implemented Object detection alongwith distance mapping of nearby objects in order to prevent collisions. We've been able to custom label/annotate the objects in detection.
