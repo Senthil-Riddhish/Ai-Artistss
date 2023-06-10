@@ -10,14 +10,24 @@
 In our project, we have harnessed the power of Intel technologies to enhance the capabilities of the YOLOv5 algorithm for object detection. By leveraging Intel's optimized libraries and frameworks, such as Intel oneDAL, Intel optimized PyTorch, and the SYCL/DPC++ libraries, we have achieved superior performance, accuracy, and efficiency in our object detection model. This integration enables us to process data faster, optimize resource utilization, and streamline post-processing steps, leading to robust and real-time object detection for autonomous vehicle applications.
 
 ## **Table of Contents**
- - [Purpose](#purpose)
- - [A Brief of the Prototype](#ABriefofthePrototype)
- - [Architecture Diagram](#Architecture)
- - [Flow Diagram](#Flow_Diagram)
- - [Folder Structure](#Folder)
- - [Dataset and Annotations](#DatasetandAnnotations)
- - [Intel® Optimized Implementation](#optimizing-the-e2e-solution-with-intel%C2%AE-oneapi-components)
- - [Performance Observations](#performance-observations)
+ - Purpose
+ - A Brief of the Prototype
+ - Architecture Diagram
+ - Flow Diagram
+ - Expected Input-Output
+ - Dataset and Annotations
+ - Folder Structure
+ - Tech Stack
+      - Optimized software components
+      - Optimized Solution setup
+ - Step-by-Step Code Execution Instructions
+      - Installation
+ - Overview
+      - Training
+ - Output Videos From Our Model
+ - Output Graph
+ - Object Detection for Autonomus vehicles
+ - What I Learned
  
  <!-- Purpose -->
 ## Purpose
