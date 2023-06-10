@@ -1,8 +1,7 @@
 # intel-oneAPI
-
-#### Team Name - Ai Artistss
-#### Problem Statement - Object Detection For Autonomous Vehicles
-#### Team Leader Email - riddhishwar.s2020@vitstudent.ac.in
+# Team Name - Ai Artistss
+# Problem Statement - Object Detection For Autonomous Vehicles
+# Team Leader Email - riddhishwar.s2020@vitstudent.ac.in
 
 ## Introduction
 "Enhanced Object Detection with Intel: Leveraging Intel Technologies for Accurate and Efficient YOLOv5 Model"
