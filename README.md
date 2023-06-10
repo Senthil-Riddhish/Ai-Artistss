@@ -11,10 +11,11 @@ In our project, we have harnessed the power of Intel technologies to enhance the
 
 ## **Table of Contents**
  - [Purpose](#purpose)
- - [A Brief of the Prototype](#A Brief of the Prototype)
+ - [A Brief of the Prototype](#ABriefofthePrototype)
  - [Architecture Diagram](#Architecture)
  - [Flow Diagram](#Flow_Diagram)
  - [Folder Structure](#Folder)
+ - [Dataset and Annotations](#DatasetandAnnotations)
  - [Intel® Optimized Implementation](#optimizing-the-e2e-solution-with-intel%C2%AE-oneapi-components)
  - [Performance Observations](#performance-observations)
  
@@ -31,50 +32,101 @@ Our prototype's real-time object detection and distance recognition features are
 <!--Flow_Diagram -->
 ## 📜 Flow Diagram:
 ![Screenshot 2023-06-09 181606](https://github.com/Senthil-Riddhish/Ai-Artistss/assets/82893678/8c6dc9d9-6955-4908-b164-c00728b7738f)
-<!--Folder-->
-## 🍞 Folder Structure
-```bash
-|-client                            #client side folder (frontend code)
-|  public
-|     --
-|  src                              #building the source code
-|     assests
-|     components                    #building the business component for our website
-|     App.js                        #Root folder for the division for each components
-|     index.css
-|     index.js
-|  package.json
-|  package-lock.json
-|
-|-dataset
-|     export
-|        -images                    #containing the images for training,validating and testing our model
-|        -labels                    #contains the equivalent format yolo format for each images
-|     data.yaml
-|
-|-yolov5
-|     classify
-|        ...
-|     data
-|        ...
-|        custom_dataset.yaml        #this is the .yaml file for training our model
-|        ...
-|     ...
-|     requirements.txt              #contains all the necessary packages
-|     ...
-```
+
+### Expected Input-Output
+
+**Input**                                 | **Output** |
+| :---: | :---: |
+| The expected input for our object detection system is a video stream or a series of images captured by the sensors installed on the autonomous vehicle. These inputs contain visual data representing the surroundings of the vehicle.          |  The expected output of our system is the detection and classification of objects present in the input data. This includes bounding box coordinates for each detected object and their corresponding class labels. The output can be visualized by drawing bounding boxes around the detected objects on the input images or video stream, along with the associated class labels and confidence scores. This information provides valuable insights for decision-making in autonomous vehicle operations, allowing the vehicle to detect and respond to various objects and obstacles on the road effectively.
+
 ## Dataset and Annotations
    ![Screenshot 2023-06-09 225151](https://github.com/Senthil-Riddhish/Ai-Artistss/assets/82893678/dcd478b6-cae1-4eb8-9c28-f658ef331900)
-
+   *Dataset*: https://universe.roboflow.com/roboflow-gw7yv/self-driving-car/dataset/3
+   
+<!--Folder-->
+## 🍞 Folder Structure
+```
+root_directory/
+└── client
+|   ├── public
+|   │   ├── favicon.ico
+|   │   ├── index.html
+|   │   ├── logo192.png
+|   │   ├── logo512.png
+|   │   ├── manifest.json
+|   │   ├── robots.txt
+|   └── src
+|        ├── assets
+|        ├── components
+|        |   ├── Header
+|        |   ├── Footer
+|        |   ├── Hero
+|        |   ├── NavBar
+|        |   ├── ...
+|        ├── App.js
+|        ├── index.js
+|        └── ...
+└── client
+    └──export
+    ├── images
+    │   ├── VOCdevkit
+    │   │   ├── VOC2007
+    │   │   │   ├── Annotations
+    │   │   │   ├── ImageSets
+    │   │   │   │   ├── Layout
+    │   │   │   │   ├── Main
+    │   │   │   │   └── Segmentation
+    │   │   │   ├── JPEGImages
+    │   │   │   ├── SegmentationClass
+    │   │   │   └── SegmentationObject
+    │   │   └── VOC2012
+    │   │       ├── Annotations
+    │   │       ├── ImageSets
+    │   │       │   ├── Action
+    │   │       │   ├── Layout
+    │   │       │   ├── Main
+    │   │       │   └── Segmentation
+    │   │       ├── JPEGImages
+    │   │       ├── SegmentationClass
+    │   │       └── SegmentationObject
+    │   ├── test2007
+    │   ├── train2007
+    │   ├── train2012
+    │   ├── val2007
+    │   └── val2012
+    └── labels
+        ├── test2007
+        ├── train2007
+        ├── train2012
+        ├── val2007
+        └── val2012
+yolov5/
+└── data
+    ├── classify
+    ├── models
+    ├── segement
+    ├── data
+    │   ├── custom_data.yaml
+```
 ## 📜 Tech Stack: 
-   List Down all technologies used to Build the prototype **Clearly mentioning Intel® AI Analytics Toolkits, it's libraries and the SYCL/DCP++ Libraries used**
-   ![Screenshot 2023-06-09 182951](https://github.com/Senthil-Riddhish/Ai-Artistss/assets/82893678/08f722e9-7637-4a44-877a-b496d5fde92f)
-   ![qwe](https://github.com/Senthil-Riddhish/Ai-Artistss/assets/82893678/de88cc7b-d827-4601-909e-dc07e47d3253)
+### **Optimized software components**
+| **Package**                | **Intel® Distribution for Python**                
+| :---                       | :---                            
+| OpenCV     | opencv-python=4.5.5.64
+| NumPy               | numpy=1.23.4
+| PyTorch              | pytorch=1.13.0
+| Intel® Extension for PyTorch         | intel-extension-for-pytorch=1.13.0                              
+| Intel® Neural Compressor         | neural-compressor=2.0   
+| Intel® Distribution of OpenVINO™ | openvino-dev=2022.3.0
+
+### **Optimized Solution setup**
+
+**YAML file**                                 | **Environment Name** |  **Configuration** |
+| :---: | :---: | :---: |
+`env/intel/intel-pt.yml`             | `intel-pt` | Python v3.9 with Intel® Extension for PyTorch v1.13.0 |
+
 ## Step-by-Step Code Execution Instructions:
-  This Section must contain set of instructions required to clone and run the prototype, so that it can be tested and deeply analysed
-  ## Installation
-
-
+## Installation
   Clone repo and install [requirements.txt](https://github.com/Senthil-Riddhish/Ai-Artistss/blob/main/yolov5/requirements.txt) in a
    [**Python>=3.7.0**](https://www.python.org/) environment, including
    [**PyTorch>=1.7**](https://pytorch.org/get-started/locally/).
@@ -100,6 +152,102 @@ python train.py --data custom_dataset.yaml --epochs 300 --weights '' --cfg yolov
                                                                  yolov5m                    40
                                                                  yolov5l                    24
                                                                  yolov5x                    16
+```
+## Overview
+### Training
+```
+ usage: train.py [-h] [--weights WEIGHTS] [--cfg CFG] [--data DATA] [--hyp HYP] [--epochs EPOCHS]
+                [--batch-size BATCH_SIZE] [--imgsz IMGSZ] [--rect] [--resume [RESUME]] [--nosave] [--noval]
+                [--noautoanchor] [--noplots] [--evolve [EVOLVE]] [--bucket BUCKET] [--cache [CACHE]] [--image-weights]
+                [--device DEVICE] [--multi-scale] [--single-cls] [--optimizer {SGD,Adam,AdamW}] [--sync-bn]
+                [--workers WORKERS] [--project PROJECT] [--name NAME] [--exist-ok] [--quad] [--cos-lr]
+                [--label-smoothing LABEL_SMOOTHING] [--patience PATIENCE] [--freeze FREEZE [FREEZE ...]]
+                [--save-period SAVE_PERIOD] [--seed SEED] [--local_rank LOCAL_RANK] [--entity ENTITY]
+                [--upload_dataset [UPLOAD_DATASET]] [--bbox_interval BBOX_INTERVAL] [--artifact_alias ARTIFACT_ALIAS]
+                [--intel INTEL] [--bf16]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --weights WEIGHTS     initial weights path
+  --cfg CFG             model.yaml path
+  --data DATA           dataset.yaml path
+  --hyp HYP             hyperparameters path
+  --epochs EPOCHS       total training epochs
+  --batch-size BATCH_SIZE
+                        total batch size for all GPUs, -1 for autobatch
+  --imgsz IMGSZ, --img IMGSZ, --img-size IMGSZ
+                        train, val image size (pixels)
+  --rect                rectangular training
+  --resume [RESUME]     resume most recent training
+  --nosave              only save final checkpoint
+  --noval               only validate final epoch
+  --noautoanchor        disable AutoAnchor
+  --noplots             save no plot files
+  --evolve [EVOLVE]     evolve hyperparameters for x generations
+  --bucket BUCKET       gsutil bucket
+  --cache [CACHE]       --cache images in "ram" (default) or "disk"
+  --image-weights       use weighted image selection for training
+  --device DEVICE       cuda device, i.e. 0 or 0,1,2,3 or cpu
+  --multi-scale         vary img-size +/- 50%
+  --single-cls          train multi-class data as single-class
+  --optimizer {SGD,Adam,AdamW}
+                        optimizer
+  --sync-bn             use SyncBatchNorm, only available in DDP mode
+  --workers WORKERS     max dataloader workers (per RANK in DDP mode)
+  --project PROJECT     save to project/name
+  --name NAME           save to project/name
+  --exist-ok            existing project/name ok, do not increment
+  --quad                quad dataloader
+  --cos-lr              cosine LR scheduler
+  --label-smoothing LABEL_SMOOTHING
+                        Label smoothing epsilon
+  --patience PATIENCE   EarlyStopping patience (epochs without improvement)
+  --freeze FREEZE [FREEZE ...]
+                        Freeze layers: backbone=10, first3=0 1 2
+  --save-period SAVE_PERIOD
+                        Save checkpoint every x epochs (disabled if < 1)
+  --seed SEED           Global training seed
+  --local_rank LOCAL_RANK
+                        Automatic DDP Multi-GPU argument, do not modify
+  --entity ENTITY       Entity
+  --upload_dataset [UPLOAD_DATASET]
+                        Upload data, "val" option
+  --bbox_interval BBOX_INTERVAL
+                        Set bounding-box image logging interval
+  --artifact_alias ARTIFACT_ALIAS
+                        Version of dataset artifact to use
+  --intel INTEL, -i INTEL
+                        To Enable Intel Optimization set to 1, default 0
+  --bf16                Enable only on Intel® Fourth Gen Xeon, BF16
+ ```
+**Command to run training**
+```sh
+cd src/yolov5 # should be inside the "yolov5" cloned repo folder ignore if already in "yolov5"
+python train.py --weights yolov5s.pt --data ./data/custom_data.yaml --epochs 10 -i 0
+```
+### Inference
+```
+usage: run_inference.py [-h] [-c CONFIG] [-d DATA_YAML] [-b BATCHSIZE] [-w WEIGHTS] [-i INTEL] [-int8inc INT8INC] [-qw QUANT_WEIGHTS] [-si SAVE_IMAGE] [-sip SAVE_IMAGE_PATH]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -c CONFIG, --config CONFIG
+                        Yaml file for quantizing model, default is "./deploy.yaml"
+  -d DATA_YAML, --data_yaml DATA_YAML
+                        Absolute path to the data yaml file containing configurations
+  -b BATCHSIZE, --batchsize BATCHSIZE
+                        batchsize for the dataloader....default is 1
+  -w WEIGHTS, --weights WEIGHTS
+                        Model Weights ".pt" format
+  -i INTEL, --intel INTEL
+                        Run Intel optimization (Ipex) when 1....default is 0
+  -int8inc INT8INC      Run INC quantization when 1....default is 0
+  -qw QUANT_WEIGHTS, --quant_weights QUANT_WEIGHTS
+                        Quantization Model Weights folder containing ".pt" format model
+  -si SAVE_IMAGE, --save_image SAVE_IMAGE
+                        Save images in the save image path specified if 1, default 0
+  -sip SAVE_IMAGE_PATH, --save_image_path SAVE_IMAGE_PATH
+                        Path to save images after post processing/ detected results
 ```
 ## Output Videos From Our Model
 https://drive.google.com/drive/folders/1WSYknCyP11lraXsjaTRNCGYYS4ejhJXf
