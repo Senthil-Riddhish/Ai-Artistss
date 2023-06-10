@@ -11,7 +11,7 @@ In our project, we have harnessed the power of Intel technologies to enhance the
 
 ## **Table of Contents**
  - [Purpose](#purpose)
- - [A Brief of the Prototype](#Prototype)
+ - [A Brief of the Prototype](#A Brief of the Prototype)
  - [Architecture Diagram](#Architecture)
  - [Flow Diagram](#Flow_Diagram)
  - [Folder Structure](#Folder)
@@ -22,7 +22,7 @@ In our project, we have harnessed the power of Intel technologies to enhance the
 ## Purpose
 The purpose of our project is to leverage Intel technologies to enhance the YOLOv5 algorithm for object detection in the context of autonomous vehicles. By utilizing Intel oneDAL, Intel optimized PyTorch, and the SYCL/DPC++ libraries, we aim to achieve improved performance, accuracy, and efficiency in detecting and classifying objects in real-time. Our goal is to provide a reliable and effective solution for autonomous vehicles to detect and respond to various objects and obstacles on the road, ensuring enhanced safety and efficiency in autonomous driving systems.
 
-<!-- Prototype -->
+<!-- A Brief of the Prototype -->
 ## 📜 A Brief of the Prototype:
 Our prototype's real-time object detection and distance recognition features are meant to make self-driving cars safer and more efficient. By leveraging the power of Intel technologies and frameworks, we've created a robust system that combines advanced computer vision algorithms and deep learning models.Intel AI Analytics Toolkit, featuring optimised deep learning frameworks like PyTorch and TensorFlow, powers the prototype. Intel-optimized libraries like oneDNN and oneDAL were used to train and infer deep learning models. This helps us locate items around the car.
 <!-- Architecture -->
