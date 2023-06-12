@@ -41,6 +41,14 @@ Our prototype's real-time object detection and distance recognition features are
 <!--Flow_Diagram -->
 ## 📜 Flow Diagram:
 ![Screenshot 2023-06-09 181606](https://github.com/Senthil-Riddhish/Ai-Artistss/assets/82893678/8c6dc9d9-6955-4908-b164-c00728b7738f)
+## Frontend and Backend
+**Frontend**                                 | **Backend** |
+| :---: | :---: |
+| User Interface: We design an intuitive and visually appealing user interface that allows users to monitor the object detection system's performance. It provides real-time visual feedback, displaying the input video stream or images, along with the detected objects, their labels, and confidence scores.Input Controls: The frontend interface incorporates controls for selecting input sources, such as live video feed from the vehicle's cameras or pre-recorded video files. System Status and Alerts: The frontend displays the system's status, indicating whether the object detection system is active and running. It also provides alerts or notifications in case of any issues or anomalies during the object detection process, ensuring that users stay informed about the system's performance.          |  Object Detection Algorithm: We implement the YOLOv5 algorithm, enhanced with Intel technologies, as the backbone of our object detection system. This deep learning algorithm processes the input video stream or images, identifying and classifying objects present in the scene.Intel Optimizations: The backend incorporates Intel optimizations, such as Intel optimized PyTorch, to accelerate the model's inference process. These optimizations leverage the computational capabilities of Intel architectures, ensuring efficient and high-performance object detection.Post-processing and Decision-making: After detecting objects, the backend performs post-processing tasks, such as non-maximum suppression, to filter out duplicate and overlapping bounding boxes. It then uses the detected objects' information to make decisions or trigger actions, such as alerting the driver or initiating autonomous vehicle maneuvers to avoid potential hazards.
+
+## Frontent (Landing Page)
+![Screenshot 2023-06-12 121908](https://github.com/Senthil-Riddhish/Ai-Artistss/assets/82893678/7b892c2f-eb09-4663-b93d-19336c7dac6b)
+![Screenshot 2023-06-12 122005](https://github.com/Senthil-Riddhish/Ai-Artistss/assets/82893678/a89c8eb6-58e0-4643-99ad-82b354e51b2b)
 
 ### Expected Input-Output
 
